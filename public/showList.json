@@ -1,0 +1,29 @@
+[   
+  {
+    "id": 1,
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF132236_160704_142630.gif",
+    "name": "우리연애할까",
+    "price": 30000,
+    "startDate": "2016.05.12",
+    "endDate": "2016.07.31",
+    "location": "서울"
+  },
+  {
+    "id": 2,
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF132236_160704_142630.gif",
+    "name": "우리연애할까2",
+    "price": 30000,
+    "startDate": "2016.05.12",
+    "endDate": "2016.07.31",
+    "location": "경기"
+  },
+  {
+    "id": 3,
+    "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF132236_160704_142630.gif",
+    "name": "우리연애할까3",
+    "price": 30000,
+    "startDate": "2016.05.12",
+    "endDate": "2016.07.31",
+    "location": "인천"
+  }
+]
