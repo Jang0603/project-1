@@ -46,10 +46,12 @@ app.get('/getDB', async (req, res) => {
   });
 });
 
-app.get('/getShowInfo', async (req, res) => {
+app.get('/getShowInfo/:ID', async (req, res) => {
+  const location = req.params.ID;
+  console.log('getshowinfo location:', location);
   try {
     const serviceKey = '8cd44b00e6b7438ebee27dfb9f4cdf16';
-    const response = await axios.get(`http://www.kopis.or.kr/openApi/restful/pblprfr?service=${serviceKey}&stdate=20230901&eddate=20231230&cpage=1&rows=5&prfstate=02&signgucode=11&signgucodesub=&kidstate=N`);
+    const response = await axios.get(`http://www.kopis.or.kr/openApi/restful/pblprfr?service=${serviceKey}&stdate=20230901&eddate=20231230&cpage=1&rows=5&prfstate=02&signgucode=${location}&signgucodesub=&kidstate=N`);
     res.json(response.data);
   } catch (error) {
     console.error(error);
@@ -57,7 +59,9 @@ app.get('/getShowInfo', async (req, res) => {
   }
 });
 
-app.get("/getShowList", async (req, res) => {
+app.get("/getShowList/:ID", async (req, res) => {
+  const location = req.params.ID;
+  console.log('getshowlist location:', location);
   try {
     datas.splice(0);
     const serviceKey = "8cd44b00e6b7438ebee27dfb9f4cdf16";
@@ -88,7 +92,7 @@ app.get("/getShowList", async (req, res) => {
               var values = [
                 result.dbs.db.mt20id,
                 result.dbs.db.prfnm,
-                "11",
+                location,
                 result.dbs.db.fcltynm,
                 result.dbs.db.prfpdfrom,
                 result.dbs.db.prfpdto,
