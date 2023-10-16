@@ -1,0 +1,292 @@
+
+  /* pagination에 대한 스타일 */
+  .MyPage {
+    border: 1px solid #ccc;
+    width: 1200px;
+    height: 900px;
+    margin-top: -700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+  }
+  
+  .LeftNav {
+    margin: auto;
+    float: left;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    font-weight: bold;
+  }
+  .Check {
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+  }
+  .Reservation {
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  
+  .select-container {
+    float: left;
+    display: inline-flex;
+    flex-wrap: warp;
+  }
+  
+  .custom-p {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .form-select {
+    font-weight: bold;
+    border: 1px solid #ccc;
+    font-size: 12px;
+  }
+  
+  /* 테이블 스타일 */
+  .ReInfo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .ReInfo th {
+    background-color: #f0f0f0; /* 회색 배경색 적용 */
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .ReInfo td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .modal {
+    width: 1200px;
+  }
+  .Check h3 {
+    margin-top: 40px;
+    font-size: 13px;
+  }
+  .Check h3 span {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .Check h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .Pagination {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+  }
+  .Cancle {
+    margin-top: 25px;
+    padding: 25px 22px 20px;
+    background: #f8f9fa;
+    line-height: 20px;
+    
+  }
+  .Cancle ol {
+    padding-left: 30px;
+  }
+  .Cancle ol li {
+    position: relative;
+    padding-left: 6px;
+    color: #878d95;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    list-style: none;
+  }
+  .Cancle ol li::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 2px;
+    height: 2px;
+    background: #878d95;
+    content: "";
+  }
+  .Cancle h6 {
+    position: relative;
+    height: 24px;
+    padding-left: 23px;
+    color: #62676c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .UserInfodiv {
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .UserInfodiv h3 {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  
+  .UserInfodiv h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .h4div {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 23px;
+    background: #f5f6f9;
+    line-height: 80px;
+    font-weight: 700;
+  }
+  
+  caption {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  
+  .UserTable {
+    table-layout: fixed;
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    font-size: 14px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 344px;
+    margin-top: 30px;
+  }
+  .UserTable th {
+    border-bottom: 1px dotted #ccc;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+  }
+  .UserTable td {
+    border-bottom: 1px dotted #ccc;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+  }
+  .UserTable tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  .U-Button {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+  }
+  .ContactUs {
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Review {
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Notice {
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .FAQ {
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .NoticeInfo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .NoticeInfo th {
+    background-color: #f0f0f0; /* 회색 배경색 적용 */
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .NoticeInfo td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  .FAQInfo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .FAQInfo th {
+    background-color: #f0f0f0; /* 회색 배경색 적용 */
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .FAQInfo td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  .ContactUsInfo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .ContactUsInfo th {
+    background-color: #f0f0f0; /* 회색 배경색 적용 */
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .ContactUsInfo td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  

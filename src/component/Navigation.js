@@ -6,7 +6,7 @@ const Navigation = () => {
       <span><h1>ticketing</h1></span>  
       <ul>
         <li>
-          <a href="/">예매 확인/취소</a>
+          <a href="/mypage">예매 확인/취소</a>
         </li>
         <li>
             {/* g=로그인 된 상태에서는 마이페이지로 변경 */}
