@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-import axios from "axios";
 
 
 function Notice() {
@@ -11,15 +10,21 @@ function Notice() {
 
   // 예시로 공지사항 데이터를 상태에 추가
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/getNotice")
-      .then((response) => {
-        setNotices(response.data);
-        console.log("Notices:", notices);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    // 이 부분에서 공지사항 데이터를 가져오는 API를 호출하여 상태에 설정
+    const sampleNotices = [
+      {
+        title: "공지 제목 1",
+        content: "공지 내용 1",
+        date: "작성일 1",
+      },
+      {
+        title: "공지 제목 2",
+        content: "공지 내용 2",
+        date: "작성일 2",
+      },
+      // 나머지 공지사항 데이터도 추가
+    ];
+    setNotices(sampleNotices);
   }, []);
 
   const handlePageChange = (event, page) => {
@@ -58,7 +63,7 @@ function Notice() {
               <tr key={index}>
                 <td>{notice.title}</td>
                 <td>{notice.content}</td>
-                <td> {new Date(notice.date).toISOString().split("T")[0]}</td>
+                <td>{notice.date}</td>
               </tr>
             ))}
           </tbody>

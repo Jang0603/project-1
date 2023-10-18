@@ -11,11 +11,10 @@ function ContactUs() {
   const inquiriesPerPage = 10; // 한 페이지에 보여질 1:1 문의 수
 
   useEffect(() => {
+    
     async function fetchInquiries() {
       try {
-        const response = await fetch(
-          "http://localhost:5000/getpersonal_inquiry"
-        ); // API 엔드포인트에 따라 수정
+        const response = await fetch("http://localhost:5000/getpersonal_inquiry"); // API 엔드포인트에 따라 수정
         if (response.ok) {
           const data = await response.json();
           setInquiries(data);
@@ -92,30 +91,17 @@ function ContactUs() {
     }
   </style>
 `;
-    ReactDOM.render(
-      <ContactForm onClose={popupWindow.close} />,
-      popupWindow.document.getElementById("popup-root")
-    );
+    ReactDOM.render(<ContactForm onClose={popupWindow.close} />, popupWindow.document.getElementById("popup-root"));
   };
 
   return (
     <div className="ContactUs">
       <div style={{ borderBottom: "2px solid #ccc" }}>
-        <h3
-          style={{ fontSize: "25px", fontWeight: "bold", marginBottom: "50px" }}
-        >
+        <h3 style={{ fontSize: "25px", fontWeight: "bold", marginBottom: "50px" }}>
           1:1 문의
         </h3>
-        <h5>
-          {" "}
-          자세한 문의는 <span style={{ color: "red" }}>문의하기</span>를 통해
-          가능합니다.{" "}
-        </h5>
-        <Stack
-          direction="row"
-          spacing={2}
-          sx={{ marginTop: "40px", marginBottom: "30px" }}
-        >
+        <h5> 자세한 문의는 <span style={{ color: "red" }}>문의하기</span>를 통해 가능합니다. </h5>
+        <Stack direction="row" spacing={2} sx={{ marginTop: "40px", marginBottom: "30px" }}>
           <Button
             sx={{ padding: "15px", backgroundColor: "black" }}
             variant="contained"
@@ -147,9 +133,7 @@ function ContactUs() {
                 <tr key={index}>
                   <td>{inquiry.inquiry_title}</td>
                   <td>{inquiry.inquiry_content}</td>
-                  <td>
-                    {new Date(inquiry.inquiry_date).toISOString().split("T")[0]}
-                  </td>
+                  <td>  {new Date(inquiry.inquiry_date).toISOString().split("T")[0]}</td>
                 </tr>
               ))
             )}

@@ -18,7 +18,7 @@ function FAQ() {
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [faqs]);
 
 
   const handlePageChange = (event, page) => {
