@@ -1,0 +1,127 @@
+.main{
+  width: 100vw;
+  text-align: center;
+}
+
+.navigation{
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  top:-16px;
+  border-bottom: 1px solid gray;
+}
+.navigation ul{
+  margin-right: 30px;
+  padding-top: 15px;
+  list-style: none;
+  margin-top: -65px;
+}
+.navigation li{
+  float: right;
+  margin-left: 4%;
+}
+.navigation a{
+  text-decoration: none;
+  color: gray;
+}
+.navigation a:hover{
+  color:black;
+}
+.footer{
+  background-color: rgb(203, 210, 216);
+  position: relative;
+  width: 100vw;
+  height: 100px;
+  border-top: solid black 1px;
+  transform: translateY(0%);
+  display: flex;
+}
+
+.showList ul li{
+  float: left;
+  margin-left: 80px;
+}
+
+.mainSlide{
+  float: none;
+  width: 500px;
+
+  display: inline-block;
+}
+
+.imgDiv{
+  float:left;
+  width:90%;
+  border: 1px solid gray;
+}
+
+.mainSlide img{
+  width: 300px; 
+}
+
+.previousButton{
+  float:left;
+  margin-top: 35%;
+  width:5%;
+}
+
+.nextButton{
+  margin-top: 35%;
+  float:left;
+  width:4%;
+}
+
+.mainMenu{
+  margin-top: 10px;
+  border-bottom: 1px solid gray;
+  position: absolute;
+  width: 100%;
+}
+
+.mainMenu ul{
+  list-style: none;
+  padding-bottom: 20px;;
+}
+
+.mainMenu ul li{
+  float: left;
+  margin-right: 40px;
+}
+
+.mainMenu ul li:hover{
+  color: gray;
+  cursor: pointer;
+}
+
+.showList ul{
+  list-style: none;
+}
+
+.showList img{
+  width: 200px;
+}
+
+.showDiv{
+  width: 500px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.showDiv:hover{
+  background-color: beige;
+}
+
+.locationUl li{
+  width: 100px;
+  height: 40px;
+  line-height: 35px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.locationUl li:hover{
+  background-color: black;
+  color: white;
+}
