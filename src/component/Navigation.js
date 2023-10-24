@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../css/Navigation.css";
 
-const Navigation = ({ navigateToModal }) => {
+const Navigation = ({}) => {
   const [searchList, SetSearchList] = useState([]);
   
   
