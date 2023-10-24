@@ -56,13 +56,9 @@ margin-right: 150px;
 }
 .menu span{
 margin-left: 50px;
-color: gray;
-text-decoration: none;
+
 }
-.menu span:hover {
-  color: black;
-  cursor: pointer;
-}
+
 .menu a{
 text-decoration: none;
 color: gray;
